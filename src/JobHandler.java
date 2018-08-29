@@ -37,14 +37,19 @@ public class JobHandler {
 		switch(warningTotals){
 		case 1:
 			warningDeRank = 5;
+			break;
 		case 2:
 			warningDeRank = 10;
+			break;
 		case 3:
 			warningDeRank = 15;
+			break;
 		case 0:
 			warningDeRank = 0;
+			break;
 		default:
 			warningDeRank = warningTotals*6;
+			break;
 		}
 
 		return currentRank - warningDeRank;
